@@ -1,0 +1,135 @@
+
+/* css selector coding trying */
+*{
+    font-family: sans-serif;
+}
+body{
+    margin: 10px;
+ 
+}
+:root{
+    background-color: rgb(233, 250, 244);
+}
+header .menu{
+   opacity: .6;
+}
+.menu, .container{
+    background-color: aquamarine;
+}
+.menu{
+    height: 90px;
+}
+.container{
+    height: 100px;
+}
+ #firstli {
+    background-color: rgb(241, 42, 42);
+
+}
+ul {
+    display: flex;
+    
+}
+.menu ul li {
+    list-style: none;
+    padding: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+.menu ul li a:active{
+    background-color: yellow;
+}
+ .menu ul li:first-child::after{
+    content: " - home button";
+    background-color: green;
+    font-weight: 700
+}
+
+.menu ul li:nth-child(2)::after{
+        content: " - product list";
+        background-color: green;
+        font-weight: 700
+    }
+    .menu ul li:nth-child(3)::after{
+        content: " - order ";
+        background-color: green;
+        font-weight: 700
+    }
+    .menu ul li:last-child::after{
+        content: " - about button";
+        background-color: green;
+        font-weight: 700;
+    }
+
+    .menu ul li a:hover{
+        color: rgb(29, 192, 197);
+        background-color: #ffff;
+        text-transform: capitalize;
+    } 
+a {
+    font-size: 20px;
+    color: black;
+}
+.container>p{
+    font-size: 2em;
+}
+div + p {
+    font-size: 20px;
+}
+p::before{
+    content: "read this";
+    background-color: white;
+    color: black;
+}
+p ~ ul{
+    height: 3em;
+    background-color: gray
+}
+.container2 .part1{
+    font-size: 50px;
+}
+
+a[target] {
+    background-color: rgb(202, 199, 206);
+}
+a:visited{
+    background-color: brown;
+}
+
+input:default {
+    box-shadow: 0 0 1px 1px red;
+}
+input:focus{
+    background-color: yellow;
+}
+input:valid{
+    background-color: darkblue;
+}
+address{
+    margin: 30px 0;
+}
+.fbpage{
+    border: 1px solid rgb(15, 24, 1);
+    padding: 10px;
+    margin: 30px 0;
+}
+.fbpage:visited{
+    background-color: brown;
+    color: rgb(236, 24, 24);
+}
+.fbpage:hover {
+    text-transform: uppercase;
+}
+address a:first-of-type {
+    background-color: #ffff; 
+}
+h6:empty {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+}
+p:lang(it){
+    color: aliceblue;
+    background-color: green;
+}
